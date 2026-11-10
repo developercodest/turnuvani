@@ -1,0 +1,20 @@
+.button { border: 0; border-radius: 10px; padding: 11px 16px; font: inherit; font-weight: 650; cursor: pointer; transition: 160ms ease; }
+.googleButton { display: flex; align-items: center; justify-content: center; gap: 14px; min-height: 54px; border: 1px solid #d6dce7; border-radius: 9px; color: #000; background: #fff; font-weight: 550; }
+.button.googleButton { box-sizing: border-box; width: 100%; color: #000; background: #fff; }
+.button.googleButton:hover { border-color: #b8c2d2; color: #000; background: #fff; }
+.googleError { margin-top: 9px; color: #b91c1c; font-size: .84rem; line-height: 1.4; text-align: center; }
+.button:focus-visible, .input:focus-visible, .closeButton:focus-visible { outline: 3px solid rgba(37, 99, 235, .28); outline-offset: 2px; }
+.button:disabled { opacity: .55; cursor: not-allowed; }
+.primary { color: #fff; background: #2563eb; }.primary:hover { background: #1d4ed8; }
+.secondary { color: #1d4ed8; background: #eff6ff; }.secondary:hover { background: #dbeafe; }
+.ghost { color: #475569; background: transparent; }.ghost:hover { background: #f1f5f9; }
+.danger { color: #fff; background: #dc2626; }.danger:hover { background: #b91c1c; }
+.field { display: grid; min-width: 0; grid-template-columns: minmax(0, 1fr); gap: 7px; }.label { color: #53617d; font-size: .86rem; font-weight: 550; }
+.input { box-sizing: border-box; min-width: 0; max-width: 100%; width: 100%; border: 1px solid #cbd5e1; border-radius: 9px; padding: 11px 12px; color: #0f172a; background: #fff; font: inherit; }.input:focus { border-color: #2563eb; }
+.input[type="date"] { display: block; min-height: 44px; -webkit-appearance: none; appearance: none; }
+.input[type="date"]::-webkit-date-and-time-value { min-height: 1.25em; text-align: left; }
+.inputError { border-color: #dc2626; }.error { color: #b91c1c; font-size: .8rem; }
+.modalBackdrop { position: fixed; inset: 0; z-index: 10; display: grid; place-items: center; padding: 20px; background: rgba(15, 23, 42, .45); }
+.modal { width: min(100%, 480px); border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px; background: #fff; box-shadow: 0 24px 60px rgba(15, 23, 42, .2); }
+.modalHeader { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }.modalHeader h2 { font-size: 1.2rem; }.closeButton { display: inline-grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 8px; color: #64748b; background: transparent; font-size: 1.4rem; line-height: 1; cursor: pointer; }.closeButton:hover { background: #f1f5f9; }
+.confirmationContent { display: grid; gap: 18px; color: #64748b; line-height: 1.5; }.confirmationContent footer { display: flex; justify-content: flex-end; gap: 10px; }.confirmationContent [role="alert"] { color: #b91c1c; font-size: .84rem; font-weight: 700; }

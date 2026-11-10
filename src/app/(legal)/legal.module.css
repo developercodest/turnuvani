@@ -1,0 +1,14 @@
+.page { min-height: 100vh; background: #f7f9fd; color: #17234a; }
+.content { width: min(100% - 40px, 860px); margin: 0 auto; padding: clamp(44px, 7vw, 84px) 0; }
+.eyebrow { margin-bottom: 12px; color: #2864eb; font-size: .78rem; font-weight: 800; letter-spacing: .08em; }
+.title { margin: 0; color: #0b1535; font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -.045em; }
+.updated { margin: 14px 0 36px; color: #64748b; font-size: .94rem; }
+.notice { margin-bottom: 26px; padding: 16px 18px; border: 1px solid #bfdbfe; border-radius: 12px; color: #1e3a8a; background: #eff6ff; line-height: 1.55; }
+.document { padding: clamp(24px, 5vw, 48px); border: 1px solid #e3e8f2; border-radius: 18px; background: #fff; box-shadow: 0 12px 35px rgba(31, 54, 99, .06); }
+.document h2 { margin: 34px 0 10px; color: #0b1535; font-size: 1.25rem; }
+.document h2:first-child { margin-top: 0; }
+.document p, .document li { color: #4b5b78; line-height: 1.7; }
+.document p { margin: 0 0 14px; }
+.document ul { margin: 0 0 14px; padding-left: 22px; }
+.document a { color: #155eef; font-weight: 700; }
+@media (max-width: 640px) { .content { width: min(100% - 32px, 860px); padding-top: 38px; }.document { padding: 24px 20px; } }

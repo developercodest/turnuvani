@@ -1,0 +1,35 @@
+{
+  "name": "turnuvani-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "tsx --test src/lib/**/*.test.ts",
+    "test:db:local": "node scripts/run-local-db-tests.mjs",
+    "dev:local": "node scripts/start-local-app.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
+    "@types/qrcode": "^1.5.6",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
+    "lucide-react": "^1.55.0",
+    "next": "16.3.8",
+    "qrcode": "^1.5.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,6 @@
+[
+  {"name":"clear winner","rules":{"winPoints":3,"drawPoints":1,"lossPoints":0,"drawAllowed":true,"homeAway":false},"scores":[[0,1,2,0],[0,2,1,0],[1,2,2,0]],"winner":0},
+  {"name":"unresolved circular tie","rules":{"winPoints":3,"drawPoints":1,"lossPoints":0,"drawAllowed":true,"homeAway":false},"scores":[[0,1,1,0],[1,2,1,0],[2,0,1,0]],"winner":null},
+  {"name":"custom points draw breaks tie","rules":{"winPoints":4,"drawPoints":2,"lossPoints":0,"drawAllowed":true,"homeAway":false},"scores":[[0,1,1,1],[0,2,2,0],[1,2,1,0]],"winner":0},
+  {"name":"draws disabled have no points","rules":{"winPoints":3,"drawPoints":1,"lossPoints":0,"drawAllowed":false,"homeAway":false},"scores":[[0,1,1,1],[0,2,2,0],[1,2,3,0]],"winner":1}
+]

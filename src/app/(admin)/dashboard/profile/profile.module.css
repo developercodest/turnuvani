@@ -1,0 +1,29 @@
+.page { display: grid; width: 100%; max-width: 1280px; margin: 0 auto; gap: 22px; }.page > header p { color: #2864eb; font-size: .73rem; font-weight: 900; letter-spacing: .1em; }.page > header h1 { margin-top: 7px; font-size: clamp(1.9rem, 3vw, 2.45rem); letter-spacing: -.05em; }.page > header span { display: block; margin-top: 9px; color: #64748b; }.settingsGrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; gap: 24px; }.form { display: grid; gap: 18px; border: 1px solid #e1e7f0; border-radius: 14px; padding: 23px; background: #fff; }.form label { display: grid; gap: 8px; color: #475569; font-size: .83rem; font-weight: 750; }.form label > span { display: inline-flex; align-items: center; gap: 7px; }.form label svg { width: 16px; color: #2864eb; }.form input { width: 100%; border: 1px solid #cbd5e1; border-radius: 9px; padding: 11px; color: #0f172a; background: #fff; font: inherit; }.form input:focus { border-color: #2864eb; outline: 3px solid rgba(40, 100, 235,.12); }.form input[readonly] { color: #64748b; background: #f8fafc; }.form small { color: #94a3b8; font-size: .74rem; font-weight: 600; }.security { display: flex; gap: 10px; border-radius: 10px; padding: 14px; color: #35507e; background: #f0f5ff; }.security > svg { width: 22px; flex: none; color: #3b65d8; }.security p { margin-top: 4px; color: #60739a; font-size: .82rem; line-height: 1.4; }.form footer { display: flex; align-items: center; justify-content: space-between; gap: 14px; border-top: 1px solid #edf1f6; padding-top: 17px; }.form footer span { color: #16803b; font-size: .82rem; font-weight: 700; }.form footer span[data-error="true"] { color: #b91c1c; }@media (max-width: 760px) { .settingsGrid { grid-template-columns: 1fr; }.form { padding: 17px; }.form footer { align-items: stretch; flex-direction: column; }.form footer button { width: 100%; } }
+.dangerZone { display: grid; gap: 16px; border: 1px solid #fecaca; border-radius: 14px; padding: 20px; background: #fff7f7; }
+.dangerZone > div { display: flex; gap: 11px; }
+.dangerZone svg { width: 21px; flex: none; color: #b91c1c; }
+.dangerZone strong { color: #7f1d1d; }
+.dangerZone p { margin-top: 4px; color: #7f1d1d; font-size: .84rem; line-height: 1.5; }
+.dangerZone button { justify-self: start; }
+.passwordSection { display: grid; gap: 17px; border: 1px solid #dbe5f2; border-radius: 14px; padding: 22px; background: #fff; }
+.sectionHeading { display: flex; gap: 11px; }
+.sectionHeading > svg { width: 22px; flex: none; color: #2563eb; }
+.sectionHeading strong { color: #172033; }
+.sectionHeading p { margin-top: 4px; color: #64748b; font-size: .84rem; line-height: 1.5; }
+.passwordForm { display: grid; gap: 14px; }
+.passwordForm label { display: grid; gap: 8px; color: #475569; font-size: .83rem; font-weight: 750; }
+.passwordForm input { width: 100%; border: 1px solid #cbd5e1; border-radius: 9px; padding: 11px; color: #0f172a; background: #fff; font: inherit; }
+.passwordForm input:focus { border-color: #2864eb; outline: 3px solid rgba(40, 100, 235,.12); }
+.passwordHint { color: #64748b; font-size: .79rem; line-height: 1.45; }.passwordHint a { color: #135ef0; font-weight: 700; }
+.passwordForm footer { display: flex; align-items: center; justify-content: space-between; gap: 14px; border-top: 1px solid #edf1f6; padding-top: 17px; }
+.passwordForm footer span { color: #16803b; font-size: .82rem; font-weight: 700; }.passwordForm footer span[data-error="true"] { color: #b91c1c; }
+.dialogBackdrop { position: fixed; z-index: 20; inset: 0; display: grid; place-items: center; padding: 20px; background: rgba(15, 23, 42, .56); }
+.deleteDialog { width: min(100%, 470px); display: grid; gap: 15px; border-radius: 16px; padding: 25px; color: #172033; background: #fff; box-shadow: 0 24px 70px rgba(15, 23, 42, .3); }
+.deleteDialog > svg { width: 29px; height: 29px; color: #b91c1c; }
+.deleteDialog h2 { font-size: 1.25rem; letter-spacing: -.025em; }
+.deleteDialog p { color: #475569; line-height: 1.5; }
+.deleteDialog label { display: grid; gap: 8px; color: #475569; font-size: .86rem; font-weight: 700; }
+.deleteDialog input { border: 1px solid #cbd5e1; border-radius: 9px; padding: 11px; color: #0f172a; font: inherit; }
+.deleteDialog input:focus { border-color: #b91c1c; outline: 3px solid rgba(185, 28, 28, .12); }
+.dialogActions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 3px; }
+@media (max-width: 560px) { .dialogActions, .passwordForm footer { flex-direction: column-reverse; align-items: stretch; }.dialogActions button, .passwordForm footer button { width: 100%; } }
