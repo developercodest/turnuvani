@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check, Crown, GitBranch, Trophy, UsersRound } from "lucide-react";
 import { AuthHeader } from "@/components/brand/AuthHeader";
@@ -23,6 +24,9 @@ const formats = [
     icon: Trophy,
     bestFor: "Uzun soluklu ligler ve düzenli maç günleri",
     points: ["Herkes birbirine karşı oynar", "Canlı puan durumu oluşur", "Ev sahibi–deplasman seçeneği sunar"],
+    screenshot: "/images/league-standings-preview.png",
+    screenshotAlt: "Lig formatındaki örnek puan durumu ekranı",
+    screenshotLabel: "Canlı puan durumu",
   },
   {
     title: "Eleme",
@@ -30,6 +34,9 @@ const formats = [
     icon: GitBranch,
     bestFor: "Kısa sürede sonuçlanan kupa turnuvaları",
     points: ["Tek maçlı eleme yapısı", "Kazanan bir üst tura çıkar", "Farklı katılımcı sayılarıyla çalışır"],
+    screenshot: "/images/knockout-bracket-preview.png",
+    screenshotAlt: "Eleme formatındaki örnek turnuva ağacı ekranı",
+    screenshotLabel: "Turnuva ağacı",
   },
 ];
 
@@ -74,13 +81,17 @@ export default function TournamentFormatsPage() {
           <h2 id="other-formats-title">Alışık olduğunuz düzenler de hazır.</h2>
         </div>
         <div className={styles.formatGrid}>
-          {formats.map(({ title, description, icon: Icon, bestFor, points }) => (
+          {formats.map(({ title, description, icon: Icon, bestFor, points, screenshot, screenshotAlt, screenshotLabel }) => (
             <article key={title}>
               <span className={styles.formatIcon}><Icon /></span>
               <h3>{title}</h3>
               <p>{description}</p>
               <div><small>EN UYGUN</small><strong>{bestFor}</strong></div>
               <ul>{points.map((point) => <li key={point}><Check />{point}</li>)}</ul>
+              <figure className={styles.screenshot}>
+                <Image src={screenshot} alt={screenshotAlt} fill sizes="(max-width: 780px) 100vw, 50vw" />
+                <figcaption>{screenshotLabel}</figcaption>
+              </figure>
             </article>
           ))}
         </div>
